@@ -54,7 +54,7 @@ Response is always returned in request context in the same content-type. So if r
 ```        
 ```(array)``` <span class="green">getData()</span> - Returns Transaction List data.
 
-```(bool)``` <span class="green">isCaptured()</span> - method to check if is captured transaction in data
+```(bool)``` <span class="green">isCapturedByList()</span> - method to check if is captured transaction in data
 
 Required request parameters:
 
@@ -123,7 +123,7 @@ Host-to-host API supports the following text formats:
                 'amount' => 1000,
                 'order_id' => '1234'
             ];
-     $capture_order = Cloudipsp\Order::capture($dataToCapture);
+     $capture_order = \Cloudipsp\Order::capture($dataToCapture);
      var_dump($capture_order->getData());
 ```        
 ```(array)``` <span class="green">getData()</span> - Returns captured order info.
@@ -159,7 +159,7 @@ Host-to-host API supports the following text formats:
      $data = [
                 'order_id' => '1234'
             ];
-     $logs = Cloudipsp\Order::atolLogs($data);
+     $logs = \Cloudipsp\Order::atolLogs($data);
      var_dump($logs->getData());
 ```        
 ```(array)``` <span class="green">getData()</span> - Returns atol logs array.

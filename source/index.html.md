@@ -6,6 +6,8 @@ toc_footers:
 includes:
   - checkout
   - order
+  - p2pcredit
+  - payment
 
 search: true
 ---
