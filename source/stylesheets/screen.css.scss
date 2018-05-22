@@ -34,6 +34,13 @@ html, body {
   background-color: $main-bg;
   height: 100%;
   -webkit-text-size-adjust: none; /* Never autoresize text */
+  span.green{
+    color: #a6e22e;
+    font-family: 'Roboto Mono', monospace, serif;
+    font-size: 13px;
+    line-height: 21px;
+    font-variant-ligatures: none;
+  }
 }
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -523,7 +530,8 @@ html, body {
     clear:right;
 
     box-sizing: border-box;
-
+    position: relative;
+    bottom: 65px;
     @extend %right-col;
 
     &>p { margin: 0; }
@@ -547,6 +555,7 @@ html, body {
       background-color: $code-annotation-bg;
       padding: $code-annotation-padding 2em;
       color: #eee;
+
     }
   }
 }
