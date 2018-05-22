@@ -9,6 +9,9 @@ includes:
   - p2pcredit
   - payment
   - subscription
+  - pcidss
+  - verification
+  - result
 
 search: true
 ---
