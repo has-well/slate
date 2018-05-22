@@ -10,15 +10,16 @@
   
   \Cloudipsp\Configuration::setMerchantId(1396424);
   \Cloudipsp\Configuration::setSecretKey('test');
-  $dataToGetStatus = [
-                  'order_id' => '123'
-              ];
-  $s_order = \Cloudipsp\Order::status($dataToGetStatus);
-  var_dump($s_order->getData());
+    $dataToGetStatus = [
+        'order_id' => '123'
+    ];
+    $orderStatus = \Cloudipsp\Order::status($dataToGetStatus);
+    var_dump($orderStatus->getData());
 ```        
-```(array)``` <span class="green">getData()</span> - Returns order info.
 
-```(bool)``` <span class="green">isApproved()</span> - method to check if payment successful
+```(array)``` <span class="green">getData()</span> - returns order info.
+
+```(bool)```  <span class="green">isApproved()</span> - method to check if payment successful.
 
 Required request parameters:
 
@@ -46,15 +47,15 @@ Response is always returned in request context in the same content-type. So if r
   
   \Cloudipsp\Configuration::setMerchantId(1396424);
   \Cloudipsp\Configuration::setSecretKey('test');
-   $dataToGetList = [
-              'order_id' => '1234'
-          ];
-   $listData = \Cloudipsp\Order::transactionList($dataToGetList);
-   var_dump($listData->getData());
+     $dataToGetList = [
+        'order_id' => '1234'
+     ];
+     $listData = \Cloudipsp\Order::transactionList($dataToGetList);
+     var_dump($listData->getData());
 ```        
-```(array)``` <span class="green">getData()</span> - Returns Transaction List data.
+```(array)``` <span class="green">getData()</span> - returns transaction list by order.
 
-```(bool)``` <span class="green">isCapturedByList()</span> - method to check if is captured transaction in data
+```(bool)```  <span class="green">isCapturedByList()</span> - method to check if is captured transaction in data
 
 Required request parameters:
 
@@ -81,16 +82,16 @@ Host-to-host API supports the following text formats:
   \Cloudipsp\Configuration::setMerchantId(1396424);
   \Cloudipsp\Configuration::setSecretKey('test');
     $dataToReverse = [
-               'currency' => 'USD',
-               'amount' => 100,
-               'order_id' => '1234'
-           ];
-    $refund_order = Cloudipsp\Order::reverse($dataToReverse);
-    var_dump($refund_order->getData());
+       'currency' => 'USD',
+       'amount' => 100,
+       'order_id' => '1234'
+    ];
+    $refundOrder = \Cloudipsp\Order::reverse($dataToReverse);
+    var_dump($refundOrder->getData());
 ```        
-```(array)``` <span class="green">getData()</span> - Returns refunded order info.
+```(array)``` <span class="green">getData()</span> - returns refunded order info.
 
-```(bool)``` <span class="green">isReversed()</span> - method to check if order is Reversed
+```(bool)``` <span class="green">isReversed()</span> - method to check if refund is success.
 
 Required request parameters:
 
@@ -119,12 +120,12 @@ Host-to-host API supports the following text formats:
   \Cloudipsp\Configuration::setMerchantId(1396424);
   \Cloudipsp\Configuration::setSecretKey('test');
      $dataToCapture = [
-                'currency' => 'USD',
-                'amount' => 1000,
-                'order_id' => '1234'
-            ];
-     $capture_order = \Cloudipsp\Order::capture($dataToCapture);
-     var_dump($capture_order->getData());
+        'currency' => 'USD',
+        'amount'   => 1000,
+        'order_id' => '1234'
+     ];
+     $captureOrder = \Cloudipsp\Order::capture($dataToCapture);
+     var_dump($captureOrder->getData());
 ```        
 ```(array)``` <span class="green">getData()</span> - Returns captured order info.
 
@@ -157,8 +158,8 @@ Host-to-host API supports the following text formats:
   \Cloudipsp\Configuration::setMerchantId(1396424);
   \Cloudipsp\Configuration::setSecretKey('test');
      $data = [
-                'order_id' => '1234'
-            ];
+        'order_id' => '1234'
+     ];
      $logs = \Cloudipsp\Order::atolLogs($data);
      var_dump($logs->getData());
 ```        

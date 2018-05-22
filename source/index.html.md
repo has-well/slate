@@ -8,6 +8,7 @@ includes:
   - order
   - p2pcredit
   - payment
+  - subscription
 
 search: true
 ---

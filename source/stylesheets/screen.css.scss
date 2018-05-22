@@ -590,6 +590,9 @@ html, body {
 }
 
 @media (max-width: $phone-width) {
+  .content pre, .content blockquote{
+    bottom: 0;
+  }
   .dark-box {
     display: none;
   }
