@@ -48,13 +48,13 @@ Parameters      | Description
 ```state```  | Checkout calendar state "y" - enabled.
 ```readonly```  | Checkout calendar readonly.
 
-
-
-<aside class="notice"><p class="nothing">
+<aside class="notice">
+<p class="nothing">
 merchant_data and recurring_data - will be converted to json string.<br/>
 Method only for protocol <b>2.0</b>.<br/>
 Response is always returned in request context in the same content-type. So if request is sent in JSON, response will be sent in JSON format too.
-</p></aside>
+</p>
+</aside>
 
 Host-to-host API v2.0 supports the following text formats:
 
@@ -62,11 +62,13 @@ Host-to-host API v2.0 supports the following text formats:
 
 **All other params look in provider documentation.**
 
+
 ## Subscription token
 
 > Example:
 
 ```php
+
 <?php
   require 'vendor/autoload.php';
   
@@ -89,6 +91,7 @@ Host-to-host API v2.0 supports the following text formats:
            ]
     ];
   $token = \Cloudipsp\Subscription::token($data);
+  
 ```
 
 ```(array)``` Returns checkout token.
@@ -96,5 +99,5 @@ Host-to-host API v2.0 supports the following text formats:
 Required request Parameters:
 
 <aside class="notice">
-Look in <a href="#payment-url-host-to-host">Payment url</a>
+Look in <a href="#payment-url-host-to-host">Same as in url.</a>
 </aside>
