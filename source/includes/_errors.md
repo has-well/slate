@@ -1,7 +1,7 @@
 # Errors
 
 <aside class="notice">
-SDK throws exceptions!.
+SDK throws exceptions!
 </aside>
 
 The basic exception list:
