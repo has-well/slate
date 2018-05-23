@@ -34,6 +34,12 @@ html, body {
   background-color: $main-bg;
   height: 100%;
   -webkit-text-size-adjust: none; /* Never autoresize text */
+  p.nothing{
+    padding-left: 20px;
+    position: relative;
+    bottom: 22px;
+    margin-bottom: -20px;
+  }
   span.green{
     color: #4f7502;
     font-family: 'Roboto Mono', monospace, serif;

@@ -12,6 +12,7 @@ includes:
   - pcidss
   - verification
   - result
+  - errors
 
 search: true
 ---
@@ -54,8 +55,10 @@ $data = [
 * ```'setHttpClient'``` - Set http client. Allowed HttpCurl, HttpGuzzle.
 
 <aside class="notice">
+<p class="nothing">
 Protocol 2.0 allowed only json type. <br/>
 Response is always returned in request context in the same content-type. So if request is sent in JSON, response will be sent in JSON format too.
+</p>
 </aside>
 
 

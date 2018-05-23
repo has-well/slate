@@ -33,6 +33,6 @@ try {
 
 ```(bool)``` <span class="green">isApprove()</span> - returns payment successfully include (checking signature).
 
-Response is always returned in request context in the same content-type. So if request is sent in JSON, response will be sent in JSON format too. Response for such request will be interim and will contain URL where customer must be redirected to payment page.
+Result is always returned in request context in the same content-type. So if request is sent in JSON, response will be sent in JSON format too. Response for such request will be interim and will contain URL where customer must be redirected to payment page.
 
-Sending request in interaction scheme A does not assume getting response in request context. Final response will be returned to merchant URL, specified in response_url and server_callback_url parameters.
+Sending request in interaction scheme A does not assume getting response in request context. Final response will be returned to merchant URL, specified in response_url and server_callback_url Parameters.
