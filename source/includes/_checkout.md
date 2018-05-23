@@ -47,7 +47,8 @@ parameters      | Description
 
 
 <aside class="notice">
-merchant_data - Will be converted to json string.<br/>
+merchant_data - will be converted to json string.<br/>
+reservation_data - will be converted to json string and encoded base64.
 Method accepted protocol <b>2.0</b>.<br/>
 Response is always returned in request context in the same content-type. So if request is sent in JSON, response will be sent in JSON format too.
 </aside>

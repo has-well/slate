@@ -1,6 +1,6 @@
 # Subscription
 
-## Subscription url (host-to-host)
+## Subscription url
 
 > Example:
 

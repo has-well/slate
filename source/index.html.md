@@ -38,10 +38,25 @@ $data = [
 \Cloudipsp\Checkout::url($data)->toCheckout();
 ```
 
-**Set the configuration:**
+**Minimal configuration:**
 
 * ```'setMerchantId'``` - Checkout Merchant ID from provider merchant portal.
-* ```'setSecretKey'``` - Merchant secret key, if operation is credit you need to set-up ```'setCreditKey'```
+* ```'setSecretKey'``` - Merchant secret key, if operation is credit you need to set ```'setCreditKey'```
+
+**Full configuration:**
+
+* ```'setMerchantId'``` - Checkout Merchant ID from provider merchant portal.
+* ```'setSecretKey'``` - Merchant secret key.
+* ```'setCreditKey'```- Merchant credit key.
+* ```'setApiVersion'``` - Set api protocol version. Allowed ['1.0', '2.0'].
+* ```'setApiUrl'``` - Set api endpoint.
+* ```'setRequestType'``` - Set request type. Allowed ['json', 'xml', 'form'].
+* ```'setHttpClient'``` - Set http client. Allowed HttpCurl, HttpGuzzle.
+
+<aside class="notice">
+Protocol 2.0 allowed only json type. <br/>
+Response is always returned in request context in the same content-type. So if request is sent in JSON, response will be sent in JSON format too.
+</aside>
 
 
 
