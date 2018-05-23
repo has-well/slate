@@ -18,7 +18,11 @@ require_once SDK_ROOTPATH . '/../vendor/autoload.php';
  * you can get params by yourself, or sdk can got it
  */
 try {
-    $result = new \Cloudipsp\Result\Result(); //or you cen build with post data $result = new \Cloudipsp\Result\Result($_POST);
+    $result = new \Cloudipsp\Result\Result();
+    /**
+      * or you can build with data parsed by yourself 
+      * $result = new \Cloudipsp\Result\Result($_POST, $secretKey, $requestType, true);
+    */
     if ($result->getData())
         var_dump($result->getData());
     else
