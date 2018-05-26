@@ -8,8 +8,8 @@
 <?php
   require 'vendor/autoload.php';
   
-   \Cloudipsp\Configuration::setMerchantId(1000);
-   \Cloudipsp\Configuration::setCreditKey('test');
+   \Cloudipsp\Configuration::setMerchantId(1396424);
+   \Cloudipsp\Configuration::setSecretKey('test');
    $TestOrderData = [
            'order_id' => time(),
            'card_number' => '4444555566661111', //testing card with 3ds
@@ -21,8 +21,9 @@
    ];
    //Call method to generate order
    $orderData = Cloudipsp\Pcidss::start($TestOrderData);
-   $form = \Cloudipsp\Pcidss::get3dsFrom($orderData->getData(), $response_url . 'response_url');
-   // or $orderData->get3dsFormContent('response_url')
+   if($orderData->is3ds())
+      $form = \Cloudipsp\Pcidss::get3dsFrom($orderData->getData(), $response_url . 'response_url');
+      // or $orderData->get3dsFormContent('response_url')
 ```   
 <aside class="warning"><p class="nothing">
 Only for PCIDSS compliant merchants.<br/>
@@ -66,8 +67,8 @@ Host-to-host API supports the following text formats:
 <?php
   require 'vendor/autoload.php';
   
-   \Cloudipsp\Configuration::setMerchantId(1000);
-   \Cloudipsp\Configuration::setCreditKey('test');
+   \Cloudipsp\Configuration::setMerchantId(1396424);
+   \Cloudipsp\Configuration::setSecretKey('test');
    if (!empty($_POST)) {
        $dataTo3dsSubmit = $_POST;
        $dataTo3dsSubmit['order_id'] = 'order_id_from_prev_step'; // adding order id from prev step

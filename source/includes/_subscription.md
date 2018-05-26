@@ -10,6 +10,7 @@
   
   \Cloudipsp\Configuration::setMerchantId(1396424);
   \Cloudipsp\Configuration::setSecretKey('test');
+  \Cloudipsp\Configuration::setApiVersion('2.0');
   $data = [
         'currency' => 'USD',
         'amount' => 1000, // convert to 10.00$
@@ -74,6 +75,7 @@ Host-to-host API v2.0 supports the following text formats:
   
   \Cloudipsp\Configuration::setMerchantId(1396424);
   \Cloudipsp\Configuration::setSecretKey('test');
+  \Cloudipsp\Configuration::setApiVersion('2.0');
   $data = [
           'order_desc' => 'tests SDK',
           'currency' => 'USD',
