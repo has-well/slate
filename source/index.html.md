@@ -21,6 +21,25 @@ search: true
 
 CloudIPSP PHP SDK is an open source library through which your PHP application can easily interact with the API. That allows you to accept payment with Visa/MasterCard cards on your website. Simply generating payment url, token, form.
 
+# Installation
+
+1. You can install via Composer.
+
+> 1.Composer Install
+
+```cmd
+composer require cloudipsp/php-sdk-v2
+```
+
+2. To install without composer, just download the latest release. Then include manual autoloader to your project.
+
+> 2.Manual installation
+
+```php
+<?php
+require '/path-to-sdk/autoload.php';
+```
+
 # Simple start
 
 > Minimal startup example:
