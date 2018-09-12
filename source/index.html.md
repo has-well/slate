@@ -19,7 +19,7 @@ search: true
 
 # Introduction
 
-CloudIPSP PHP SDK is an open source library through which your PHP application can easily interact with the API. That allows you to accept payment with Visa/MasterCard cards on your website. Simply generating payment url, token, form.
+The CloudIPSP PHP SDK is an open source library through which your PHP application can easily interact with the API. That allows you to accept payment by Visa/MasterCard cards on your website. Simply generating payment url, token, form.
 
 # Installation
 
@@ -31,7 +31,7 @@ CloudIPSP PHP SDK is an open source library through which your PHP application c
 composer require cloudipsp/php-sdk-v2
 ```
 
-2. To install without composer, just download the latest release. Then include manual autoloader to your project.
+2. To install without composer, just download the latest release. Then include manual auto loader to your project.
 
 > 2.Manual installation
 
@@ -76,8 +76,7 @@ $data = [
 <aside class="notice">
 <p class="nothing">
 Protocol 2.0 allowed only json type. <br/>
-Response is always returned in request context in the same content-type. So if request is sent in JSON, response will be sent in JSON format too.
-</p>
+The response is always returned in request context in the same content-type. So if a request is sent in JSON, response will be sent in JSON format too.</p>
 </aside>
 
 

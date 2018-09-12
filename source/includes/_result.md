@@ -31,11 +31,11 @@ try {
         echo "Fail: " . $e->getMessage();
     }
 ```
-```(array)``` <span class="green">getData()</span> - returns callback.
+```(array)``` <span class="green">getData()</span> — returns callback data.
 
-```(bool)``` <span class="green">isValid()</span> - returns if callback valid (checking signature).
+```(bool)``` <span class="green">isValid()</span> — returns if callback valid (checking signature).
 
-```(bool)``` <span class="green">isApprove()</span> - returns payment successfully include (checking signature).
+```(bool)``` <span class="green">isApprove()</span> — returns payment successfully include (checking signature).
 
 Result is always returned in request context in the same content-type. So if request is sent in JSON, response will be sent in JSON format too. Response for such request will be interim and will contain URL where customer must be redirected to payment page.
 

@@ -21,7 +21,7 @@ Request must contain additional parameter receiver_card_number or receiver_recto
 You need setup credit key.
 </p></aside>     
 
-```(array)``` <span class="green">getData()</span> - Returns payment data.
+```(array)``` <span class="green">getData()</span> — returns payment data.
 
 Required request Parameters:
 

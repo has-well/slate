@@ -27,9 +27,9 @@
   $data = $url->getData();
 ```
 
-```(array)``` <span class="green">getData()</span> - Returns checkout url.
+```(array)``` <span class="green">getData()</span> — returns checkout url.
 
-```(null)``` <span class="green">toCheckout()</span> - Redirect to checkout page.
+```(null)``` <span class="green">toCheckout()</span> — redirect to checkout page.
 
 Required request Parameters:
 
@@ -51,7 +51,7 @@ Parameters      | Description
 
 <aside class="notice">
 <p class="nothing">
-merchant_data and recurring_data - will be converted to json string.<br/>
+merchant_data and recurring_data — will be converted to json string.<br/>
 Method only for protocol <b>2.0</b>.<br/>
 Response is always returned in request context in the same content-type. So if request is sent in JSON, response will be sent in JSON format too.
 </p>

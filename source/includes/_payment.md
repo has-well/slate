@@ -21,7 +21,7 @@
 Request date format is 'd.m.Y H:i:s'
 </aside>     
 
-```(array)``` <span class="green">getData()</span> - Returns payment report data.
+```(array)``` <span class="green">getData()</span> — returns payment report data.
 
 Required request Parameters:
 
@@ -56,9 +56,9 @@ Host-to-host API supports the following text formats:
   var_dump($recurring_order->getData());
 ```      
 
-```(array)``` <span class="green">getData()</span> - Returns payment info.
+```(array)``` <span class="green">getData()</span> — returns payment info.
 
-```(bool)``` <span class="green">isApproved()</span> - method to check if recurring is successful.
+```(bool)``` <span class="green">isApproved()</span> — method to check if recurring is successful.
 
 Required request Parameters:
 

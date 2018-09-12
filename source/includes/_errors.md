@@ -1,9 +1,5 @@
 # Errors
 
-<aside class="notice">
-SDK throws exceptions!
-</aside>
-
 The basic exception list:
 
 Parameters      | Description                                                                                      

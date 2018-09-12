@@ -17,9 +17,9 @@
     var_dump($orderStatus->getData());
 ```        
 
-```(array)``` <span class="green">getData()</span> - returns order info.
+```(array)``` <span class="green">getData()</span> — returns order info.
 
-```(bool)```  <span class="green">isApproved()</span> - method to check if payment successful.
+```(bool)```  <span class="green">isApproved()</span> — method to check if payment is successful.
 
 Required request Parameters:
 
@@ -53,9 +53,9 @@ Response is always returned in request context in the same content-type. So if r
      $listData = \Cloudipsp\Order::transactionList($dataToGetList);
      var_dump($listData->getData());
 ```        
-```(array)``` <span class="green">getData()</span> - returns transaction list by order.
+```(array)``` <span class="green">getData()</span> — returns transaction list by order.
 
-```(bool)```  <span class="green">isCapturedByList()</span> - method to check if is captured transaction in data
+```(bool)```  <span class="green">isCapturedByList()</span> — method to check if is captured transaction in the data
 
 Required request Parameters:
 
@@ -89,9 +89,9 @@ Host-to-host API supports the following text formats:
     $refundOrder = \Cloudipsp\Order::reverse($dataToReverse);
     var_dump($refundOrder->getData());
 ```        
-```(array)``` <span class="green">getData()</span> - returns refunded order info.
+```(array)``` <span class="green">getData()</span> — returns refunded order info.
 
-```(bool)``` <span class="green">isReversed()</span> - method to check if refund is success.
+```(bool)``` <span class="green">isReversed()</span> — method to check if refund is success.
 
 Required request Parameters:
 
@@ -127,9 +127,9 @@ Host-to-host API supports the following text formats:
      $captureOrder = \Cloudipsp\Order::capture($dataToCapture);
      var_dump($captureOrder->getData());
 ```        
-```(array)``` <span class="green">getData()</span> - Returns captured order info.
+```(array)``` <span class="green">getData()</span> — returns captured order info.
 
-```(bool)``` <span class="green">isCaptured()</span> - method to check if capture request is true
+```(bool)``` <span class="green">isCaptured()</span> — method to check if capture request is true
 
 Required request Parameters:
 
@@ -163,7 +163,7 @@ Host-to-host API supports the following text formats:
      $logs = \Cloudipsp\Order::atolLogs($data);
      var_dump($logs->getData());
 ```        
-```(array)``` <span class="green">getData()</span> - Returns atol logs array.
+```(array)``` <span class="green">getData()</span> — returns atol logs array.
 
 Required request Parameters:
 

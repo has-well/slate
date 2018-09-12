@@ -30,13 +30,13 @@ Only for PCIDSS compliant merchants.<br/>
 If card is 3ds a merchant receiving this response must build an HTML form and using it submit customer to acs_url.
 </p></aside>     
 
-```(array)``` <span class="green">getData()</span> - returns payment data.
+```(array)``` <span class="green">getData()</span> — returns payment data.
 
-```(bool)``` <span class="green">is3ds()</span> - checking if 3ds response.
+```(bool)``` <span class="green">is3ds()</span> — check if is 3ds response.
 
-```(string)``` <span class="green">get3dsFrom($responseData, 'response_url')</span> - generating form for step two if 3ds response.
+```(string)``` <span class="green">get3dsFrom($responseData, 'response_url')</span> — generating form for step two if 3ds response.
 
-```(string)``` <span class="green">get3dsFormContent('response_url')</span> - generating form for step two if 3ds response.
+```(string)``` <span class="green">get3dsFormContent('response_url')</span> — generating form request for step two if 3ds response.
 
 
 Required request Parameters:
@@ -77,7 +77,7 @@ Host-to-host API supports the following text formats:
 ``` 
 Submitting result generated form from step one
 
-```(array)``` <span class="green">getData()</span> - returns payment data.
+```(array)``` <span class="green">getData()</span> — returns payment data.
 
 Host-to-host API supports the following text formats
 
